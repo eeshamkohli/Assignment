@@ -1,0 +1,27 @@
+<main>
+  <div>
+    <div class="main-content">
+      <div class="main-info">
+        <h1> Find Reliable &amp; Verified Home Service Providers</h1>
+        <div class="input-container">
+          <div class="inputlabels" style="border-radius:5px 0 0 5px;">
+            <img src="../../assets/Homepage/Export/Path@2x.png" style="height:60%" alt="Image">
+          </div>
+          <input placeholder="What service you need" type="text" />
+          <div class="inputlabels">
+            <img src="../../assets/Homepage/Export/Location@2x.png" style="height:60%" alt="Image">
+          </div>
+          <div class="inputlabels" style="background:#1b74c1; border-radius:0 5px 5px 0; color:white; cursor:pointer; ">Find Service</div>
+        </div>
+        <div>
+          <span class="badge" *ngFor="let service of homeServices">{{service}}</span>
+          <span class="badge">...</span>
+        </div>
+      </div>
+      <div class="main-image-container">
+        <img src="../../assets/Homepage/Export/Bitmap.png" alt="Image" class="main-image">
+      </div>
+
+    </div>
+  </div>
+</main>

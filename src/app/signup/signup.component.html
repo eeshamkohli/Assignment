@@ -1,0 +1,29 @@
+<main class="signup-page">
+  <h1 class="signup-title">Signup</h1>
+  <form action="" class="signup-form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <label for="gender">Title</label>
+    <select id="gender" name="gender" [ngModel]="defaulGender">
+      <option value="male">Mr.</option>
+      <option value="female">Ms.</option>
+    </select>
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="firstname" ngModel required #firstname="ngModel">
+    <span class="help-block" *ngIf="!firstname.valid && firstname.touched">Please enter</span>
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="lastname"ngModel required #lastname="ngModel">
+    <span class="help-block" *ngIf="!lastname.valid && lastname.touched">Please enter</span>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" ngModel required email #email="ngModel">
+    <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email</span>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" ngModel required #password="ngModel">
+    <span class="help-block" *ngIf="!password.valid && password.touched">Please enter a valid password</span>
+    <label for="contact">Contact number</label>
+    <input type="number" id="contact" name="contact" ngModel required #contact="ngModel">
+    <span class="help-block" *ngIf="!contact.valid && contact.touched">Please enter a valid contact number</span>
+    <label for="contact">DOB</label>
+    <input type="date" id="dob" name="dob" ngModel required #dob="ngModel">
+    <span class="help-block" *ngIf="!dob.valid && dob.touched">Please enter a valid Date</span>
+    <button type="submit" [disabled]="!f.valid">Submit</button>
+  </form>
+</main>

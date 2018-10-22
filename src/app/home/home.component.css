@@ -1,0 +1,86 @@
+main{
+    margin-top: 20vh;
+}
+
+.main-image{
+width: 50%;
+position: fixed;
+right:0;
+top:0;
+bottom: 0;
+}
+
+@media(min-width:800px){
+    .main-image{
+        width: 55%;
+        position: fixed;
+        right:0;
+        top:0;
+        bottom: 0;
+        }
+}
+
+@media(min-width:1000px){
+    .main-image{
+        width: 45%;
+        position: fixed;
+        right:0;
+        top:0;
+        bottom: 0;
+        }
+}
+
+@media(min-width:1200px){
+    .main-image{
+        width: 35%;
+        position: fixed;
+        right:0;
+        top:0;
+        bottom: 0;
+        }
+}
+
+
+
+.main-info{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    vertical-align: middle;
+}
+
+.input-container{
+    background: white;
+    display: inline-block;
+    margin: 2rem 0;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+.inputlabels{
+    background: white;
+    padding: 1rem;
+    height: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: none;
+    margin:0;
+}
+
+input{
+    padding: 1rem;
+    height: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+
+.badge{
+    background: whitesmoke;
+    color:#5f6268;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin: 0.5rem 0.3rem;
+}
